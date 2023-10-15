@@ -13,20 +13,20 @@
 
 <body>
    <div class="wrapper">
-      <header id="open" class="header">
+      <header id="open header" class="header">
          <div id="close" class="header__container">
             <a class="header__logo" href="">
                <img src="img/logo.jpg" alt="">
             </a>
             <div class="header__menu menu">
-               <nav class="menu__body">
-                  <ul class="menu__list">
-                     <li class="menu__item"><a class="menu__link" href="">Main</a></li>
-                     <li class="menu__item"><a class="menu__link" href="">UN global warming</a></li>
-                     <li class="menu__item"><a class="menu__link" href="">Sources</a></li>
-                     <li class="menu__item"><a class="menu__link" href="">Our advices</a></li>
-                  </ul>
-               </nav>
+               <div class="menu__body">
+                  <nav class="menu__list" id="nav">
+                     <a class="menu__link menu__item " href="#" data-scroll="#intro">Main</a>
+                     <a class="menu__link menu__item" href="#" data-scroll="#UN">UN global warming</a>
+                     <a class="menu__link menu__item" href="#" data-scroll="#sources">Sources</a>
+                     <a class="menu__link menu__item" href="#" data-scroll="#advice">Our advices</a>
+                  </nav>
+               </div>
             </div>
             <div class="header__button">
                <a href="about.html" class="button button-blue">More</a>
@@ -36,7 +36,7 @@
          </div>
       </header>
       <main class="main">
-         <section class="get-started">
+         <section class="get-started" id="intro">
             <div class="get-started__container">
                <div class="get-started__content">
                   <div class="get-started__block-text block-text">
@@ -70,7 +70,7 @@
 
             </div> <!-- get-started__container -->
          </section> <!-- get-started -->
-         <section class="stay-safe">
+         <section class="stay-safe" id="UN">
             <div class="stay-safe__container">
                <div class="stay-safe__media">
                   <div class="media-stay-safe">
@@ -104,7 +104,7 @@
                </div>
             </div>
          </section>
-         <section class="experts">
+         <section class="experts" id="sources">
             <div class="experts__container">
                <div class="experts__statistics statistics-experts">
                   <div class="statistics-experts__body body-statistics-experts">
@@ -166,7 +166,7 @@
                </div>
             </div>
          </section>
-         <section class="healthcare">
+         <section class="healthcare" id="advice">
             <div class="healthcare__container">
                <div class="healthcare__block-text block-text-health block-text-center">
                   <h2 class="block-text__title">
@@ -240,6 +240,9 @@
          </div>
       </footer>
    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="js/header.js"></script>
 </body>
 
 </html>

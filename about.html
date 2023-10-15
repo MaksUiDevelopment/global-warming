@@ -13,18 +13,16 @@
 
 <body>
   <div class="wrapper">
-    <header id="open" class="header">
+    <header id="open header" class="header">
       <div id="close" class="header__container">
         <a class="header__logo" href="">
           <img src="img/logo.jpg" alt="">
         </a>
         <div class="header__menu menu">
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="">Main</a></li>
-              <li class="menu__item"><a class="menu__link" href="">UN</a></li>
-              <li class="menu__item"><a class="menu__link" href="">Nuclear</a></li>
-            </ul>
+          <nav class="menu__list" id="nav">
+            <a class="menu__link menu__item " href="#" data-scroll="#intro">Main</a>
+            <a class="menu__link menu__item" href="#" data-scroll="#heatwaves">heatwaves</a>
+            <a class="menu__link menu__item" href="#" data-scroll="#nuclear">Nuclear</a>
           </nav>
         </div>
         <div class="header__button">
@@ -35,7 +33,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="get-started">
+      <section class="get-started" id="intro">
         <div class="get-started__container">
           <div class="get-started__content">
             <div class="get-started__block-text block-text">
@@ -81,7 +79,7 @@
 
         </div> <!-- get-started__container -->
       </section> <!-- get-started -->
-      <section class="stay-safe">
+      <section class="stay-safe" id="heatwaves">
         <div class="stay-safe__container">
           <div class="stay-safe__media">
             <div class="media-stay-safe">
@@ -134,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="experts">
+      <section class="experts" id="nuclear">
         <div class="experts__container">
           <div class="experts__statistics statistics-experts">
             <div class="statistics-experts__body body-statistics-experts">
@@ -183,6 +181,9 @@
       </section>
     </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
